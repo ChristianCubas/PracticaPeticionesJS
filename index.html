@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Peticiones con JSON-Server</title>
+  </head>
+  <body>
+    <div>
+      <form action="" id="register_form">
+        <fieldset>
+          <h2>Register user</h2>
+          <br />
+          <label for="">Name</label>
+          <input type="text" placeholder="Enter your name" id="name" />
+          <br />
+          <label for="">Surname</label>
+          <input type="text" placeholder="Enter your surname" id="surname" />
+          <br />
+          <label for="">Birthday</label>
+          <input type="date" id="birthday" />
+          <br />
+          <input type="submit" value="Send data" class="not_danger" />
+        </fieldset>
+      </form>
+      <form action="" id="update_form">
+        <fieldset>
+          <h3>Update data user</h3>
+          <br />
+          <label for="">ID</label>
+          <input type="text" placeholder="Enter your id" id="userID" />
+          <br />
+          <label for="">Name</label>
+          <input type="text" placeholder="Enter your name" id="name_person" />
+          <br />
+          <label for="">Surname</label>
+          <input type="text" id="surname_person" />
+          <br />
+          <label for="">Birthday</label>
+          <input type="date" id="birthdayUser" />
+          <br />
+          <input type="submit" value="Send data" class="not_danger" />
+        </fieldset>
+      </form>
+      <form action="" id="delete_form">
+        <fieldset>
+          <h3>Delete Users</h3>
+          <label for="">Id</label>
+          <input type="text" placeholder="Enter your id" id="idUser" />
+          <br />
+          <input type="submit" value="Send data" id="delete" />
+        </fieldset>
+      </form>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Birthday</th>
+        </thead>
+        <tbody id="render_data"></tbody>
+      </table>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
